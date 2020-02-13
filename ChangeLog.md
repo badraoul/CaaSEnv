@@ -12,6 +12,13 @@ Format should be:
 
 ## Logs
 
+**02-13-20**   *Upgrade NSX Manager*
+ - upgraded NSX Manager to version 2.5
+ - process was to first backup in NSX (we also took snapshots of the VMs)
+ - next download the 'mub' archive which is the actual upload binaries
+ - we ran 'pre checks' and got back warning result that host would need to be in maintenance mode but upgrade manager should manage this for us.
+ - follow the wizard on NSX Manager > System > Upgrade.
+
 **01-28-20**   *Upgrade infrastructure with VxRail Manager*
  - upgrade has completed without issue - VxRail, ESXi and vCenter have all been upgraded.
  - may need to rebalance vSAN now
